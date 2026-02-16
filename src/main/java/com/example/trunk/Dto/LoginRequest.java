@@ -1,5 +1,8 @@
 package com.example.trunk.Dto;
 
-public record LoginRequest() {
+public record LoginRequest(
+    String email,
+    String password
+) {
     
 }
