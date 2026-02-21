@@ -1,5 +1,7 @@
 package com.example.trunk.Dto;
 
-public record LoginResponse() {
+public record LoginResponse(
+    String token
+) {
     
 }
