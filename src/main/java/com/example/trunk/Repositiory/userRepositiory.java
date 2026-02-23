@@ -9,5 +9,6 @@ import com.example.trunk.Model.User;
 @Repository
 public interface userRepositiory extends JpaRepository<User, Long> {
 
+    Optional<User> findByEmail(String email);
     
 }
