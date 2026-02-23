@@ -1,5 +1,7 @@
 package com.example.trunk.Repositiory;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,5 +12,6 @@ import com.example.trunk.Model.User;
 public interface userRepositiory extends JpaRepository<User, Long> {
 
     Optional<User> findByEmail(String email);
+    
     
 }
